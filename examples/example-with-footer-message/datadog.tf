@@ -6,7 +6,7 @@ resource "datadog_monitor" "watchdog_monitor" {
 
     message = <<-EOS
 
-    ${module.datadog_labels.ddog_message_footer}
+    ${module.datadog_tags.ddog_message_footer}
 
     EOS
 
@@ -17,5 +17,5 @@ resource "datadog_monitor" "watchdog_monitor" {
     timeout_h         = 60
     include_tags      = true
 
-    tags              = module.datadog_labels.monitor_tags
+    tags              = module.datadog_tags.monitor_tags
 }

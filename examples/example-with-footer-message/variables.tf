@@ -15,14 +15,14 @@ variable "env_name" {
 #
 variable "productName" {
     type        = string
-    default     = "ESPN"
-    description = "Identities product experiences that rely on the applications. individual applications can an do support multiple product experiences. Examples: ESPN+, unison, abcnews"
+    default     = "TeslaX"
+    description = "Identities product experiences that rely on the applications. individual applications can an do support multiple product experiences."
 }
 
 variable "platformName" {
     type        = string
-    default     = "Distribution"
-    description = "Identities which product engineering platform these resources support. Examples: Video, News, Infrastructure, Distribution, Messaging, Games, Editorial"
+    default     = "Automation"
+    description = "Identities which product engineering platform these resources support."
 }
 
 variable "scm_url" {

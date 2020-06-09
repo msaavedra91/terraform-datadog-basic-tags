@@ -7,7 +7,7 @@ In this example we make use of a default message for resources in Datadog where 
 ```
   ddog_message_footer = <<-EOS
 - - -
-**NOTE** - This monitor is managed via [Terraform](${var.infrastructure_vcs_repo}). Manual modifications will be lost.
+**NOTE** - This monitor is managed via [Terraform](${var.vcs_repo}). Manual modifications will be lost.
 
   EOS
 ```

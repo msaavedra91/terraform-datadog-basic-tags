@@ -8,16 +8,16 @@ variable "environment" {
 variable "productName" {
   type        = string
   default     = ""
-  description = "Identities product experiences that rely on the applications. Examples: ESPN, ABCOTV, ABCNews, Fox"
+  description = "Identities product experiences that rely on the applications."
 }
 
 variable "platformName" {
   type        = string
   default     = ""
-  description = "Identities which product engineering platform these resources support. Examples: Video, News, Infrastructure, Distribution, Messaging, Games, Editorial"
+  description = "Identities which product engineering platform these resources support."
 }
 
-variable "infrastructure_vcs_repo" {
+variable "vcs_repo" {
   type        = string
   description = "This allows for quick troubleshooting of issues and finding the controlling infrastructure code to make required changes to. May want to have a source code version as well."
 }
